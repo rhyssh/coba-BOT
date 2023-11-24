@@ -10,25 +10,25 @@
 </head>
 
 <body>
-
     <form>
-        <input type="text" id="nama" placeholder="Nama" />
-        <input type="text" id="email" placeholder="Email" />
-        <input type="text" id="pesan" placeholder="Pesan" />
+        <input type="text" id="nama" placeholder="Nama">
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="pesan" placeholder="Pesan">
 
         <input type="hidden" id="tanggal" value="<?php echo date('d'); ?>">
         <input type="hidden" id="hari" value="<?php echo date('D'); ?>">
         <input type="hidden" id="bulan" value="<?php echo date('M'); ?>">
         <input type="hidden" id="jam" value="<?php echo date('H'); ?>">
-        <input type="hidden" id="menit" value="<?php echo date('M'); ?>">
+        <input type="hidden" id="menit" value="<?php echo date('i'); ?>">
 
-        <input style="cursor: pointer;" type="button" id="kirim" value="KIRIM" onclick="kirimPesan()" />
+        <input style="cursor: pointer;" type="button" id="kirim" value="KIRIM" onclick="kirimPesan()">
     </form>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="main.js"></script>
 
 </html>
