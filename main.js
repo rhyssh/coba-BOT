@@ -10,10 +10,10 @@ function kirimPesan() {
 
     var date = new Date();
 
-    var tanggal = date.getDate();
-    var hari = date.getDay();
-    var bulan = date.getMonth();
-    var jam = date.getHours();
+    // var tanggal = date.getDate();
+    // var hari = date.getDay();
+    // var bulan = date.getMonth();
+    // var jam = date.getHours();
 
     var gabungan = 'Nama:%0A' + nama.value + '%0AEmail:%0A' + email.value + '%0APesan:%0A' + pesan.value + '%0ATanggal:%0A' + tanggal + '%0AHari:%0A' + hari + '%0ABulan:%0A' + bulan + '%0AJam:%0A' + jam;
 
