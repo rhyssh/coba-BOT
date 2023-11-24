@@ -15,6 +15,12 @@
         <input type="text" id="nama" placeholder="Nama" />
         <input type="text" id="email" placeholder="Email" />
         <input type="text" id="pesan" placeholder="Pesan" />
+
+        <input type="hidden" id="tanggal" value="<?php echo date('d'); ?>">
+        <input type="hidden" id="hari" value="<?php echo date('D'); ?>">
+        <input type="hidden" id="bulan" value="<?php echo date('M'); ?>">
+        <input type="hidden" id="jam" value="<?php echo date('H'); ?>">
+
         <input style="cursor: pointer;" type="button" id="kirim" value="KIRIM" onclick="kirimPesan()" />
     </form>
 

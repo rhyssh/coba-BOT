@@ -3,6 +3,10 @@ function kirimPesan() {
     var nama = document.getElementById('nama');
     var email = document.getElementById('email');
     var pesan = document.getElementById('pesan');
+    var tanggal = document.getElementById('tanggal').value;
+    var hari = document.getElementById('hari').value;
+    var bulan = document.getElementById('bulan').value;
+    var jam = document.getElementById('jam').value;
 
     var date = new Date();
 
