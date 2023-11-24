@@ -7,15 +7,18 @@ function kirimPesan() {
     var hari = document.getElementById('hari').value;
     var bulan = document.getElementById('bulan').value;
     var jam = document.getElementById('jam').value;
+    var menit = document.getElementById('menit').value;
 
     var date = new Date();
 
+    namaHari = hari == 1 ? 'senin' : hari == 2 ? 'selasa' : hari == 3 ? 'rabu' : hari == 4 ? 'kamis' : hari == 5 ? "jum'at" : hari == 6 ? 'sabtu' : hari == 7 ? 'ahad' : hari;
+    namaBulan = bulan == 1 ? 'januari' : bulan == 2 ? 'februari' : bulan == 3 ? 'maret' : bulan == 4 ? 'april' : bulan == 5 ? 'mei' : bulan == 6 ? 'juni' : bulan == 7 ? 'juli' : bulan == 8 ? 'agustus' : bulan == 9 ? 'september' : bulan == 10 ? 'oktober' : bulan == 11 ? 'november' : bulan == 12 ? 'desember' : bulan;
     // var tanggal = date.getDate();
     // var hari = date.getDay();
     // var bulan = date.getMonth();
     // var jam = date.getHours();
 
-    var gabungan = 'Nama:%0A' + nama.value + '%0AEmail:%0A' + email.value + '%0APesan:%0A' + pesan.value + '%0ATanggal:%0A' + tanggal + '%0AHari:%0A' + hari + '%0ABulan:%0A' + bulan + '%0AJam:%0A' + jam;
+    var gabungan = 'Nama:%0A' + nama.value + '%0AEmail:' + email.value + '%0APesan:%0A' + pesan.value + '%0AWaktu:%0A' + tanggal + ',' + hari + ',' + bulan + '%0AJam:%0A' + jam + ':' + menit;
 
     var token = '6916554317:AAFYiMSaG-EEp1EZetgKhGrtcmgXG1OBjNk'; // Ganti dengan token bot yang kamu buat
     var grup = '-1002020558670'; // Ganti dengan chat id dari bot yang kamu buat
