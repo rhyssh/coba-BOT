@@ -10,8 +10,11 @@ function kirimPesan() {
     var menit = document.getElementById("menit").value;
 
     var date = new Date();
-
+    const dayNames = ["senin", "selasa", "rabu", "kamis", "jum'at", "sabtu", "ahad"];
+    const hari = date.getDay();
     const namaHari = dayNames[hari];
+    const monthNames = ["januari", "februari", "maret", "april", "mei", "juni", "juli", "agustus", "september", "oktober", "november", "desember"];
+    const bulan = date.getMonth();
     const namaBulan = monthNames[bulan];
 
     var gabungan = `Nama: ${nama.value}
