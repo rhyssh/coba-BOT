@@ -15,7 +15,7 @@ function kirimPesan() {
     var bulan = date.getMonth();
     var jam = date.getHours();
 
-    var gabungan = 'Nama:%0A' + nama.value + '%0AEmail:%0A' + email.value + '%0APesan:%0A' + pesan.value + '%0ATanggal:%0A' + tanggal + '%0AHari:%0A' + hari + '%0ABulan:%0A' + bulan + '%0AJam:%0A' + jam;
+    var gabungan = 'Nama:%0A' + nama.value + '%0AEmail:%0A' + email.value + '%0APesan:%0A' + pesan.value + '%0ATanggal:%0A' + tanggal + '%0AHari:%0A' + hari + '%0ABulan:%0A' + `bulan + 1` + '%0AJam:%0A' + jam;
 
     var token = '6916554317:AAFYiMSaG-EEp1EZetgKhGrtcmgXG1OBjNk'; // Ganti dengan token bot yang kamu buat
     var grup = '-1002020558670'; // Ganti dengan chat id dari bot yang kamu buat
